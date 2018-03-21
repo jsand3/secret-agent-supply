@@ -125,9 +125,10 @@ body {
         width: 100%;
         padding: .5rem 0;
         text-align: center;
+        margin-bottom: -.2rem;
       }
       .gadget-item img {
-        height: 9rem;
+        height: 100%;
       }
       // .gadget-item img.size-correction {
       //   height: 5.5rem;
@@ -140,6 +141,8 @@ body {
         width: 100%;
         background-color: $color-secondary;
         padding: .5rem 0;
+        text-align: center;
+        margin-bottom: -.2rem;
       }
     }
 
@@ -147,8 +150,25 @@ body {
       width: 100%;
       display: flex;
       justify-content: space-between;
+
+      .info-item {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+      }
+      span:first-child {
+        padding: 2rem 1rem;
+        background-color: $color-secondary;
+      }
+      span:last-child {
+        color: $color-secondary;
+        padding-top: .2rem;
+        margin-bottom: 4rem;
+      }
     }
   }
+
+
 
 
 
@@ -156,6 +176,19 @@ body {
 = Footer =
 ===============================================>>>>>*/
 
+footer {
+  background-color: black;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+
+  .footer-container {
+    width: 100%;
+  }
+  span {
+    text-align: left;
+  }
+}
 
 
 

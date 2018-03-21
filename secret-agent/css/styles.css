@@ -114,16 +114,19 @@ body {
       background-color: black;
       width: 100%;
       padding: .5rem 0;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: -.2rem; }
     .section-container .gadgets-container .gadget-item img {
-      height: 9rem; }
+      height: 100%; }
     .section-container .gadgets-container .gadget-img-container {
       height: 9rem;
       padding: 2rem 0; }
     .section-container .gadgets-container .gadget-name-container {
       width: 100%;
       background-color: black;
-      padding: .5rem 0; }
+      padding: .5rem 0;
+      text-align: center;
+      margin-bottom: -.2rem; }
   .section-container .info-container {
     width: 100%;
     display: -webkit-box;
@@ -132,10 +135,40 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    .section-container .info-container .info-item {
+      width: 35%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .section-container .info-container span:first-child {
+      padding: 2rem 1rem;
+      background-color: black; }
+    .section-container .info-container span:last-child {
+      color: black;
+      padding-top: .2rem;
+      margin-bottom: 4rem; }
 
 /*=============================================>>>>>
 = Footer =
 ===============================================>>>>>*/
+footer {
+  background-color: black;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  footer .footer-container {
+    width: 100%; }
+  footer span {
+    text-align: left; }
+
 /*=============================================>>>>>
 = Header =
 ===============================================>>>>>*/
