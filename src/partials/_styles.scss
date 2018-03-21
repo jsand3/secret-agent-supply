@@ -191,11 +191,20 @@ footer {
 }
 
 
-
+@media only screen and (max-width: 1024px) {
 /*=============================================>>>>>
 = Header =
 ===============================================>>>>>*/
+.max-width-container {
+  width: 100%;
+  margin: 0;
+}
+.header-container {
 
+  .header-item {
+    max-width: unset;
+  }
+}
 
 
 
@@ -209,14 +218,42 @@ footer {
 = Nav =
 ===============================================>>>>>*/
 
+.nav-container {
+
+  ul.desktop {
+    display: none;
+  }
+  ul.mobile {
+    display: flex;
+    justify-content: center;
+
+    li {
+      padding: .75rem 0;
+    }
+  }
+}
+
+
 /*=============================================>>>>>
 = Section =
 ===============================================>>>>>*/
 
+.section-container {
+
+  .gadget-item:first-child {
+    display: none;
+  }
+  .gadget-item {
+    width: 47%;
+  }
+}
+
+
+
 /*=============================================>>>>>
 = Footer =
 ===============================================>>>>>*/
-
+} /* End max width 1024px */
 
 
 
