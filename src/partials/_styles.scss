@@ -16,6 +16,10 @@ body {
 .font-small {
   font-size: $font-size-sm;
 }
+.black-box {
+  background-color: $color-secondary;
+  width: 35%;
+}
 
 /*=============================================>>>>>
 = Header =
@@ -95,6 +99,58 @@ body {
 /*=============================================>>>>>
 = Section =
 ===============================================>>>>>*/
+
+  .section-container {
+    width: 100%;
+
+    .section-flex {
+      // display: flex;
+      // justify-content: space-between;
+    }
+    .gadgets-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 3rem 0;
+
+      .gadget-item {
+        border: 4px solid $color-secondary;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      span {
+        background-color: $color-secondary;
+        width: 100%;
+        padding: .5rem 0;
+        text-align: center;
+      }
+      .gadget-item img {
+        height: 9rem;
+      }
+      // .gadget-item img.size-correction {
+      //   height: 5.5rem;
+      // }
+      .gadget-img-container {
+        height: 9rem;
+        padding: 2rem 0;
+      }
+      .gadget-name-container {
+        width: 100%;
+        background-color: $color-secondary;
+        padding: .5rem 0;
+      }
+    }
+
+    .info-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+
 
 /*=============================================>>>>>
 = Footer =

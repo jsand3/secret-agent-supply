@@ -16,6 +16,10 @@ body {
 .font-small {
   font-size: 0.77rem; }
 
+.black-box {
+  background-color: black;
+  width: 35%; }
+
 /*=============================================>>>>>
 = Header =
 ===============================================>>>>>*/
@@ -80,6 +84,55 @@ body {
 /*=============================================>>>>>
 = Section =
 ===============================================>>>>>*/
+.section-container {
+  width: 100%; }
+  .section-container .gadgets-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 3rem 0; }
+    .section-container .gadgets-container .gadget-item {
+      border: 4px solid black;
+      width: 30%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .section-container .gadgets-container span {
+      background-color: black;
+      width: 100%;
+      padding: .5rem 0;
+      text-align: center; }
+    .section-container .gadgets-container .gadget-item img {
+      height: 9rem; }
+    .section-container .gadgets-container .gadget-img-container {
+      height: 9rem;
+      padding: 2rem 0; }
+    .section-container .gadgets-container .gadget-name-container {
+      width: 100%;
+      background-color: black;
+      padding: .5rem 0; }
+  .section-container .info-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
 /*=============================================>>>>>
 = Footer =
 ===============================================>>>>>*/
