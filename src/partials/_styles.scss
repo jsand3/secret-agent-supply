@@ -66,11 +66,14 @@ body {
 
       .hero-child-item {
         background-color: $color-secondary;
-        padding: 2rem 3rem;
+        padding: 1rem 2rem;
         width: 20rem;
       }
       h3 {
         margin-bottom: .25rem;
+      }
+      h1 {
+        font-size: $font-size-md;
       }
     }
   }
@@ -240,15 +243,13 @@ footer {
 
 .section-container {
 
-  .gadget-item:first-child {
+  .gadget-item:last-child {
     display: none;
   }
   .gadget-item {
     width: 47%;
   }
 }
-
-
 
 /*=============================================>>>>>
 = Footer =
@@ -257,18 +258,33 @@ footer {
 
 
 
-
+@media only screen and (max-width: 470px) {
 /*=============================================>>>>>
 = Header =
 ===============================================>>>>>*/
 
+.hero-container {
+  height: 15rem;
 
+  .hero-item {
+    padding-top: 10rem;
+
+    .hero-child-item {
+      width: 100%;
+    }
+    h3 {
+      font-size: $font-size-sm;
+    }
+    h1 {
+      font-size: $font-size-md;
+    }
+  }
+}
 
 
 /*=============================================>>>>>
 = Hero =
 ===============================================>>>>>*/
-
 
 
 /*=============================================>>>>>
@@ -279,6 +295,41 @@ footer {
 = Section =
 ===============================================>>>>>*/
 
+  .section-container {
+
+    .gadget-item:nth-child(2) {
+      display: none;
+    }
+    .gadgets-container {
+      justify-content: center;
+
+      .gadget-item {
+        width: 90%;
+      }
+    }
+    .info-container {
+      flex-direction: column;
+      align-items: center;
+
+      .info-item {
+        width: 90%;
+
+        span:last-child {
+          margin-bottom: .5rem;
+        }
+      }
+    }
+  }
+
 /*=============================================>>>>>
 = Footer =
 ===============================================>>>>>*/
+
+  footer {
+
+    .footer-container {
+      text-align: center;
+    }
+  }
+
+}

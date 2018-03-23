@@ -58,10 +58,12 @@ body {
     padding-top: 9rem; }
     .hero-container .hero-item .hero-child-item {
       background-color: black;
-      padding: 2rem 3rem;
+      padding: 1rem 2rem;
       width: 20rem; }
     .hero-container .hero-item h3 {
       margin-bottom: .25rem; }
+    .hero-container .hero-item h1 {
+      font-size: 1rem; }
 
 /*=============================================>>>>>
 = Nav =
@@ -198,7 +200,7 @@ footer {
   /*=============================================>>>>>
 = Section =
 ===============================================>>>>>*/
-  .section-container .gadget-item:first-child {
+  .section-container .gadget-item:last-child {
     display: none; }
   .section-container .gadget-item {
     width: 47%; }
@@ -207,18 +209,51 @@ footer {
 ===============================================>>>>>*/ }
 
 /* End max width 1024px */
-/*=============================================>>>>>
+@media only screen and (max-width: 470px) {
+  /*=============================================>>>>>
 = Header =
 ===============================================>>>>>*/
-/*=============================================>>>>>
+  .hero-container {
+    height: 15rem; }
+    .hero-container .hero-item {
+      padding-top: 10rem; }
+      .hero-container .hero-item .hero-child-item {
+        width: 100%; }
+      .hero-container .hero-item h3 {
+        font-size: 0.77rem; }
+      .hero-container .hero-item h1 {
+        font-size: 1rem; }
+  /*=============================================>>>>>
 = Hero =
 ===============================================>>>>>*/
-/*=============================================>>>>>
+  /*=============================================>>>>>
 = Nav =
 ===============================================>>>>>*/
-/*=============================================>>>>>
+  /*=============================================>>>>>
 = Section =
 ===============================================>>>>>*/
-/*=============================================>>>>>
+  .section-container .gadget-item:nth-child(2) {
+    display: none; }
+  .section-container .gadgets-container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .section-container .gadgets-container .gadget-item {
+      width: 90%; }
+  .section-container .info-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .section-container .info-container .info-item {
+      width: 90%; }
+      .section-container .info-container .info-item span:last-child {
+        margin-bottom: .5rem; }
+  /*=============================================>>>>>
 = Footer =
 ===============================================>>>>>*/
+  footer .footer-container {
+    text-align: center; } }
